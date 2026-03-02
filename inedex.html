@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLori</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset/favicon.jpg" type="image/x-icon" />
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="drawer lg:drawer-open">
+      <input id="mobile-drawer" type="checkbox" class="drawer-toggle" />
+
+      <div class="drawer-content">
+        <header class="bg-[#373737] sticky">
+          <div class="navbar max-w-7xl mx-auto min-h-20 px-4 lg:px-8">
+            <div class="navbar-start">
+              <label
+                for="mobile-drawer"
+                class="btn btn-ghost text-white px-2 lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </label>
+
+              <a href="#" class="hidden lg:flex items-center">
+                <div class="h-14 w-auto bg-white rounded-md overflow-hidden">
+                  <img
+                    src="./asset/logo.jpg"
+                    alt="Logo"
+                    class="h-full w-auto object-cover object-center"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="navbar-center lg:hidden">
+              <a href="#" class="flex items-center">
+                <div class="h-14 w-auto bg-white rounded-md overflow-hidden">
+                  <img
+                    src="./asset/logo.jpg"
+                    alt="Logo"
+                    class="h-full w-auto object-cover object-center"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <!-- RIGHT: Desktop Menu -->
+            <div class="navbar-end hidden lg:flex">
+              <ul class="menu menu-horizontal gap-2 text-white font-semibold">
+                <li><a class="hover:bg-white/10">HOME</a></li>
+                <li><a class="hover:bg-white/10">ABOUT</a></li>
+
+                <!-- SERVICE -->
+                <li class="relative group">
+                  <a class="hover:bg-white/10 flex items-center gap-1">
+                    SERVICE
+                    <svg
+                      class="h-4 w-4 opacity-70"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 9l6 6 6-6"
+                      />
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="absolute top-full left-0 mt-3 w-72 bg-white text-gray-500 shadow-lg rounded-none hidden group-hover:block z-[999]"
+                  >
+                    <li><a class="py-4">Creative Concept & Execution</a></li>
+                    <li><a class="py-4">Digital Media Buying</a></li>
+                    <li><a class="py-4">Social Media Marketing</a></li>
+                    <li><a class="py-4">Brand Identity</a></li>
+                    <li><a class="py-4">Web Design & Development</a></li>
+                    <li><a class="py-4">Event and Activation</a></li>
+                    <li><a class="py-4">Video Production & Photography</a></li>
+                    <li><a class="py-4">SEO</a></li>
+                    <li><a class="py-4">Digital PR</a></li>
+                    <li><a class="py-4">Design and Printing Solutions</a></li>
+                  </ul>
+                </li>
+
+                <!-- PORTFOLIO  -->
+                <li class="relative group">
+                  <a class="hover:bg-white/10 flex items-center gap-1">
+                    PORTFOLIO
+                    <svg
+                      class="h-4 w-4 opacity-70"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 9l6 6 6-6"
+                      />
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="absolute top-full left-0 mt-3 w-56 bg-white text-gray-500 shadow-lg rounded-none hidden group-hover:block z-[999]"
+                  >
+                    <li><a class="py-4">PORTFOLIO 1</a></li>
+                    <li><a class="py-4">PORTFOLIO 2</a></li>
+                    <li><a class="py-4">PORTFOLIO 3</a></li>
+                    <li><a class="py-4">PORTFOLIO 4</a></li>
+                    <li><a class="py-4">PORTFOLIO 5</a></li>
+                    <li><a class="py-4">PORTFOLIO 6</a></li>
+                    <li><a class="py-4">PORTFOLIO 7</a></li>
+                    <li><a class="py-4">PORTFOLIO 8</a></li>
+                  </ul>
+                </li>
+                <li><a class="hover:bg-white/10">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- mobile sidebar -->
+      <div class="drawer-side lg:hidden">
+        <label for="mobile-drawer" class="drawer-overlay bg-black/40"></label>
+
+        <ul class="menu w-1/2 min-h-full bg-white p-0 shadow-xl">
+          <li class="border-b">
+            <a class="py-6 text-red-600 font-semibold">HOME</a>
+          </li>
+
+          <li class="border-b">
+            <a class="py-6 font-semibold">ABOUT</a>
+          </li>
+
+          <!--  MOBILE SERVICES -->
+          <li class="border-b">
+            <details>
+              <summary class="py-6 font-semibold flex items-stretch p-0">
+                <span class="flex-1 px-4 flex items-center">SERVICES</span>
+              </summary>
+              <ul class="p-0 bg-white border-t">
+                <li><a class="py-4 pl-8">Creative Concept & Execution</a></li>
+                <li><a class="py-4 pl-8">Digital Media Buying</a></li>
+                <li><a class="py-4 pl-8">Social Media Marketing</a></li>
+                <li><a class="py-4 pl-8">Brand Identity</a></li>
+                <li><a class="py-4 pl-8">Web Design & Development</a></li>
+                <li><a class="py-4 pl-8">Event and Activation</a></li>
+                <li><a class="py-4 pl-8">Video Production & Photography</a></li>
+                <li><a class="py-4 pl-8">SEO</a></li>
+                <li><a class="py-4 pl-8">Digital PR</a></li>
+                <li><a class="py-4 pl-8">Design and Printing Solutions</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <!--MOBILE PORTFOLIO -->
+          <li class="border-b">
+            <details>
+              <summary class="py-6 font-semibold flex items-stretch p-0">
+                <span class="flex-1 px-4 flex items-center">PORTFOLIO</span>
+              </summary>
+
+              <ul class="p-0 bg-white border-t">
+                <li><a class="py-5 pl-8">PORTFOLIO 1</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 2</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 3</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 4</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 5</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 6</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 7</a></li>
+                <li><a class="py-5 pl-8">PORTFOLIO 8</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="py-6 font-semibold px-4">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Footer Section-->
+    <footer class="bg-[#373737] text-white">
+      <section class="text-white py-14">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Have Some Projects in Mind?
+          </h2>
+
+          <div class="mt-6">
+            <a
+              class="btn bg-red-600 hover:bg-base-100 hover:text-red-600 shadow-none border-none text-white px-10"
+            >
+              Ask for a quote
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="max-w-7xl mx-auto px-4 py-14">
+        <!-- 4 columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <!-- COL 1: Logo + Address -->
+          <div class="space-y-6">
+            <div class="w-52">
+              <img
+                src="./asset/logo.jpg"
+                alt="Logo"
+                class="w-full object-contain rounded-md"
+              />
+            </div>
+
+            <div class="space-y-5 text-sm opacity-90">
+              <div class="flex gap-3">
+                <span class="text-xl"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <div>
+                  <p class="text-lg font-semibold">Dhaka</p>
+                  <p>Road 3, House 62(Level 4) Niketon,</p>
+                  <p>Gulshan 1, Dhaka</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <span class="text-xl"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <div>
+                  <p class="text-lg font-semibold">Canada</p>
+                  <p>20 Samuel Wood Way, Etobicoke, ON,</p>
+                  <p>M9B 0C8, Canada</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-center">
+                <span class="text-xl"
+                  ><i class="fa-regular fa-envelope-open"></i
+                ></span>
+                <a
+                  href="mailto:contact@geekysocial.com"
+                  class="underline underline-offset-4"
+                >
+                  contact@geekysocial.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL 2: Useful Links -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Useful Links</h3>
+            <ul class="space-y-4 text-sm opacity-90">
+              <li><a class="hover:text-[#F01010]" href="#">Our Team</a></li>
+              <li><a class="hover:text-[#F01010]" href="#">Insights</a></li>
+              <li><a class="hover:text-[#F01010]" href="#">Blog</a></li>
+              <li><a class="hover:text-[#F01010]" href="#">Webinar</a></li>
+              <li>
+                <a class="hover:text-[#F01010]" href="#">News & Events</a>
+              </li>
+              <li>
+                <a class="hover:text-[#F01010]" href="#">Press & Media</a>
+              </li>
+              <li><a class="hover:text-[#F01010]" href="#">Career</a></li>
+              <li>
+                <a class="hover:text-[#F01010]" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COL 3: Popular Services + Social -->
+          <div class="space-y-10">
+            <div>
+              <h3 class="text-2xl font-bold mb-6">Popular Services</h3>
+              <ul class="space-y-4 text-sm opacity-90">
+                <li>
+                  <a class="hover:text-[#F01010]" href="#"
+                    >Facebook Media Buying</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#F01010]" href="#"
+                    >Social Media Marketing</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#F01010]" href="#"
+                    >Digital Media Buying</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#F01010]" href="#"
+                    >Search Engine Optimization</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#F01010]" href="#"
+                    >Web Design & Development</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Keep in Touch</h3>
+              <div class="flex gap-4 text-xl opacity-90">
+                <a href="#" class="hover:opacity-70 hover:text-[#F01010]"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" class="hover:opacity-70 hover:text-[#F01010]"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="hover:opacity-70 hover:text-[#F01010]"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="#" class="hover:opacity-70 hover:text-[#F01010]"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL 4: Newsletter -->
+          <div>
+            <h3 class="text-2xl font-bold mb-3">Join Our Newsletter</h3>
+            <p class="text-sm opacity-90 mb-6">
+              Stay up-to-date with latest media insights and updates
+            </p>
+
+            <form class="space-y-4">
+              <div class="grid grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="input input-bordered w-full bg-white text-black"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input input-bordered w-full bg-white text-black"
+                />
+              </div>
+
+              <!-- recaptcha box look -->
+              <div
+                class="bg-[#1f1f1f] border border-white/10 p-4 flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-sm rounded-none bg-white"
+                  />
+                  <span class="text-sm">I'm not a robot</span>
+                </div>
+                <div class="text-xs opacity-70 text-right">
+                  reCAPTCHA<br />Privacy - Terms
+                </div>
+              </div>
+              <button
+                class="btn w-full bg-red-600 hover:bg-red-700 border-none shadow-none text-white"
+              >
+                SUBSCRIBE NOW!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a
+      href="#top"
+      class="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-white text-black grid place-items-center shadow-lg hover:scale-105 transition"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </body>
+</html>
